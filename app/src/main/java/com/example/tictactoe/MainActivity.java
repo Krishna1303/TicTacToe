@@ -21,14 +21,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-    public void btn_restart_clicked(View view){
-        Button btn_restart = (Button) view;
-        btn_restart.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+    public void btn_restart_clicked(){
                 setContentView(R.layout.activity_game);
-            }
-        });
     }
     public void btnClicked(View view){
         final Button b = (Button) view;
@@ -144,9 +138,10 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, "Match tied", Toast.LENGTH_SHORT).show();
             }
+            btn_restart_clicked();
         }
     }
-    public void btnStartGame(View view){
+    public void btnStartGame(){
                 setContentView(R.layout.activity_game);
     }
 
