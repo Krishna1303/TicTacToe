@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
             btn_restart_clicked();
         }
     }
-    public void btnStartGame(){
+    public void btnStartGame(View view){
                 setContentView(R.layout.activity_game);
     }
 
