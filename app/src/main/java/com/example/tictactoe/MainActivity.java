@@ -147,13 +147,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void btnStartGame(View view){
-        Button startGame = (Button) view;
-        startGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
                 setContentView(R.layout.activity_game);
-            }
-        });
     }
 
 }
